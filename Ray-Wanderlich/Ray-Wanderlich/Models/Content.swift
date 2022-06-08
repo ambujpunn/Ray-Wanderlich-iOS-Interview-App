@@ -14,7 +14,7 @@ protocol Identifiable {
     var id: Identifier<Self> { get }
 }
 
-struct Identifier<T: Identifiable>: Decodable {
+struct Identifier<T: Identifiable> {
     let rawValue: T.RawIdentifier
 }
 
@@ -26,36 +26,17 @@ enum ContentType: String, Decodable {
     }
 }
 
-extension ContentType: Identifiable {
-    var id: Identifier<ContentType> {
-        Identifier(rawValue: rawValue)
-    }
-}
-
-//protocol Content {
-protocol Content: Identifiable {
-    var name: String { get }
-    var description: String { get }
-    var releaseDate: Date { get }
-    var imageURL: URL { get }
-    var type: ContentType { get }
-    var contentURL: URL { get }
-    // Note: Need to include body somehow - because it is another API pull - but only needed when seeing more info about the article
-    //var body: AnyPublisher { get }
-}
-
-
-struct Article: Content {
+struct Content: Identifiable {
     let name: String
     let description: String
     let releaseDate: Date
     let imageURL: URL
     let type: ContentType
-    let id: Identifier<Article>
-    let contentURL: URL
+    let id: Identifier<Content>
+    let bodyURL: URL
 }
 
-extension Article: Decodable {
+extension Content: Decodable {
     enum OuterKeys: CodingKey {
         case id, attributes, links
     }
@@ -81,11 +62,13 @@ extension Article: Decodable {
         releaseDate = try attributesContainer.decode(Date.self, forKey: .releaseDate)
         imageURL = try attributesContainer.decode(URL.self, forKey: .imageURL)
         type = try attributesContainer.decode(ContentType.self, forKey: .type)
-        contentURL = try linksContainer.decode(URL.self, forKey: .url)
+        bodyURL = try linksContainer.decode(URL.self, forKey: .url)
     }
 }
 
-struct ArticleResults {
-    let articles: [Article]
+struct ContentResults {
+    let contents: [Content]
 }
-extension ArticleResults: Decodable {}
+extension ContentResults: Decodable {}
+
+
