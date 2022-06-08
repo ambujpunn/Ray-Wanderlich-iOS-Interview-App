@@ -6,15 +6,14 @@
 //
 
 import Foundation
-import Combine
 
-protocol Identifiable {
-    associatedtype RawIdentifier: Decodable = String
+protocol Identifiable: Hashable {
+    associatedtype RawIdentifier: Hashable = String
     
     var id: Identifier<Self> { get }
 }
 
-struct Identifier<T: Identifiable> {
+struct Identifier<T: Identifiable>: Hashable {
     let rawValue: T.RawIdentifier
 }
 
