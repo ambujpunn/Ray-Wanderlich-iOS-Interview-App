@@ -19,6 +19,7 @@ enum JSONLoader<T: Decodable>: String {
     }
     
     case articles
+    case videos
     
     func load() -> AnyPublisher<T, Never> {
         return Future { promise in

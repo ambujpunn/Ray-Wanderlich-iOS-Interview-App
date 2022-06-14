@@ -22,6 +22,8 @@
 		61A02B1428538EA4009B5DE3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B1328538EA4009B5DE3 /* Utilities.swift */; };
 		61A02B16285408D8009B5DE3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B15285408D8009B5DE3 /* Service.swift */; };
 		61A02B182854122C009B5DE3 /* JsonLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B172854122C009B5DE3 /* JsonLoading.swift */; };
+		61A02B1A285922F9009B5DE3 /* Mocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B19285922F9009B5DE3 /* Mocked.swift */; };
+		61A02B1D285923B0009B5DE3 /* MockedJSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B1C285923B0009B5DE3 /* MockedJSONService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		61A02B1328538EA4009B5DE3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		61A02B15285408D8009B5DE3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		61A02B172854122C009B5DE3 /* JsonLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoading.swift; sourceTree = "<group>"; };
+		61A02B19285922F9009B5DE3 /* Mocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocked.swift; sourceTree = "<group>"; };
+		61A02B1C285923B0009B5DE3 /* MockedJSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedJSONService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		612D1A1C284FA76C00FE31E2 /* Ray-Wanderlich */ = {
 			isa = PBXGroup;
 			children = (
+				61A02B1B2859238E009B5DE3 /* Services */,
 				612D1A59284FE4DE00FE31E2 /* Common */,
 				612D1A4D284FA83600FE31E2 /* Models */,
 				612D1A1D284FA76C00FE31E2 /* AppDelegate.swift */,
@@ -120,7 +125,6 @@
 				612D1A26284FA76E00FE31E2 /* Assets.xcassets */,
 				612D1A28284FA76E00FE31E2 /* LaunchScreen.storyboard */,
 				612D1A2B284FA76E00FE31E2 /* Info.plist */,
-				61A02B15285408D8009B5DE3 /* Service.swift */,
 			);
 			path = "Ray-Wanderlich";
 			sourceTree = "<group>";
@@ -156,6 +160,7 @@
 			children = (
 				612D1A4F284FA88000FE31E2 /* articles.json */,
 				612D1A51284FA8B200FE31E2 /* videos.json */,
+				61A02B19285922F9009B5DE3 /* Mocked.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -167,6 +172,15 @@
 				61A02B172854122C009B5DE3 /* JsonLoading.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		61A02B1B2859238E009B5DE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61A02B15285408D8009B5DE3 /* Service.swift */,
+				61A02B1C285923B0009B5DE3 /* MockedJSONService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				612D1A22284FA76C00FE31E2 /* ViewController.swift in Sources */,
+				61A02B1D285923B0009B5DE3 /* MockedJSONService.swift in Sources */,
 				612D1A1E284FA76C00FE31E2 /* AppDelegate.swift in Sources */,
+				61A02B1A285922F9009B5DE3 /* Mocked.swift in Sources */,
 				612D1A20284FA76C00FE31E2 /* SceneDelegate.swift in Sources */,
 				61A02B1428538EA4009B5DE3 /* Utilities.swift in Sources */,
 				61A02B182854122C009B5DE3 /* JsonLoading.swift in Sources */,

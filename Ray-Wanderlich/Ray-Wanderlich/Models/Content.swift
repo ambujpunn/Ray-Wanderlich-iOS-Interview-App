@@ -8,10 +8,6 @@
 import Foundation
 import Combine
 
-protocol Mocked {
-    var mock: AnyPublisher<Self, Never> { get }
-}
-
 enum ContentType: String, Decodable {
     case article, video
     
@@ -61,8 +57,14 @@ extension Content: Decodable {
 }
 
 extension Content: Mocked {
-    var mock: AnyPublisher<Content, Never> {
-        JSONLoader<Content>.articles.load()
+    static var mock: AnyPublisher<Content, Never> {
+        JSONLoader.articles.load()
+    }
+}
+
+extension Content {
+    static var mockVideos: AnyPublisher<Content, Never> {
+        JSONLoader.videos.load()
     }
 }
 

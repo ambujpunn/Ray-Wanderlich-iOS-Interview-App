@@ -6,13 +6,11 @@
 //
 
 import Foundation
+import Combine
 
 protocol Service {
     associatedtype Data: Hashable
     
-    func fetch() -> Data
+    func fetch() -> AnyPublisher<Data, Never>
 }
 
-struct MockedDataService {
-    
-}
