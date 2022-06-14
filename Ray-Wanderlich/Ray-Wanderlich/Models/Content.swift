@@ -6,15 +6,10 @@
 //
 
 import Foundation
+import Combine
 
-protocol Identifiable: Hashable {
-    associatedtype RawIdentifier: Hashable = String
-    
-    var id: Identifier<Self> { get }
-}
-
-struct Identifier<T: Identifiable>: Hashable {
-    let rawValue: T.RawIdentifier
+protocol Mocked {
+    var mock: AnyPublisher<Self, Never> { get }
 }
 
 enum ContentType: String, Decodable {
@@ -62,6 +57,12 @@ extension Content: Decodable {
         imageURL = try attributesContainer.decode(URL.self, forKey: .imageURL)
         type = try attributesContainer.decode(ContentType.self, forKey: .type)
         bodyURL = try linksContainer.decode(URL.self, forKey: .url)
+    }
+}
+
+extension Content: Mocked {
+    var mock: AnyPublisher<Content, Never> {
+        JSONLoader<Content>.articles.load()
     }
 }
 
