@@ -1,0 +1,218 @@
+{
+    "data": [{
+        "id": "10529048",
+        "type": "contents",
+        "attributes": {
+            "uri": "rw://betamax/collections/258",
+            "name": "iOS Bootcamp",
+            "description": "<p>Recordings of live sessions with RW mentors from our iOS Bootcamp program.</p>\n",
+            "released_at": "2020-05-26T18:24:00.000Z",
+            "free": true,
+            "difficulty": "beginner",
+            "content_type": "collection",
+            "duration": 86134,
+            "popularity": 789.5925925925926,
+            "technology_triple_string": "",
+            "contributor_string": "Jay Strawn, Bhagat Singh, Audrey Tam & Jeff Rames",
+            "ordinal": null,
+            "professional": false,
+            "description_plain_text": "Recordings of live sessions with RW mentors from our iOS Bootcamp program.\n",
+            "video_identifier": null,
+            "parent_name": null,
+            "accessible": true,
+            "card_artwork_url": "https://files.betamax.raywenderlich.com/attachments/collections/258/c6b848f6-09f4-427e-a139-70240de16212.png",
+            "body": null
+        },
+        "relationships": {
+            "domains": {
+                "data": [
+                    {
+                        "id": "6",
+                        "type": "domains"
+                    }
+                ]
+            },
+            "child_contents": {
+                "meta": {
+                    "count": 27
+                }
+            },
+            "progression": {
+                "data": null
+            },
+            "bookmark": {
+                "data": null
+            },
+            "groups": {
+                "data": [
+                    {
+                        "id": "603",
+                        "type": "groups"
+                    }
+                ]
+            },
+            "categories": {
+                "data": [
+                    {
+                        "id": "21246",
+                        "type": "categories"
+                    }
+                ]
+            }
+        },
+        "links": {
+            "self": "https://api.raywenderlich.com/api/contents/10529048-ios-bootcamp"
+        }
+    },
+        {
+            "id": "10054540",
+            "type": "contents",
+            "attributes": {
+                "uri": "rw://betamax/collections/245",
+                "name": "Android Studio Tips and Tricks",
+                "description": "<p>Master the hidden gems of Android Studio to improve the speed of your development with these Android Development tips and tricks.</p>\n",
+                "released_at": "2020-05-28T13:00:00.000Z",
+                "free": false,
+                "difficulty": "beginner",
+                "content_type": "collection",
+                "duration": 3312,
+                "popularity": 1278.8235294117646,
+                "technology_triple_string": "Kotlin 1.3, Android 5.1, Android Studio 3.6",
+                "contributor_string": "Adriana Kutenko & Kevin D Moore",
+                "ordinal": null,
+                "professional": false,
+                "description_plain_text": "Master the hidden gems of Android Studio to improve the speed of your development with these Android Development tips and tricks.\n",
+                "video_identifier": null,
+                "parent_name": null,
+                "accessible": false,
+                "card_artwork_url": "https://files.betamax.raywenderlich.com/attachments/collections/245/48277fc5-d2ee-45f8-91c1-702fc6c7a2d6.png",
+                "body": null
+            },
+            "relationships": {
+                "domains": {
+                    "data": [
+                        {
+                            "id": "2",
+                            "type": "domains"
+                        }
+                    ]
+                },
+                "child_contents": {
+                    "meta": {
+                        "count": 17
+                    }
+                },
+                "progression": {
+                    "data": null
+                },
+                "bookmark": {
+                    "data": null
+                },
+                "groups": {
+                    "data": [
+                        {
+                            "id": "594",
+                            "type": "groups"
+                        },
+                        {
+                            "id": "595",
+                            "type": "groups"
+                        },
+                        {
+                            "id": "596",
+                            "type": "groups"
+                        },
+                        {
+                            "id": "597",
+                            "type": "groups"
+                        },
+                        {
+                            "id": "598",
+                            "type": "groups"
+                        }
+                    ]
+                },
+                "categories": {
+                    "data": [
+                        {
+                            "id": "145",
+                            "type": "categories"
+                        },
+                        {
+                            "id": "153",
+                            "type": "categories"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "https://api.raywenderlich.com/api/contents/10054540-android-studio-tips-and-tricks"
+            }
+        },
+        {
+            "id": "10529094",
+            "type": "contents",
+            "attributes": {
+                "uri": "rw://betamax/collections/259",
+                "name": "Android Bootcamp",
+                "description": "<p>Recordings of live sessions with RW mentors from our Android Bootcamp program.</p>\n",
+                "released_at": "2020-05-26T18:29:00.000Z",
+                "free": true,
+                "difficulty": "beginner",
+                "content_type": "collection",
+                "duration": 95591,
+                "popularity": 588.9629629629629,
+                "technology_triple_string": "",
+                "contributor_string": "Fuad Kamal, Luka Kordić, Filip Babić & Jenn Bailey",
+                "ordinal": null,
+                "professional": false,
+                "description_plain_text": "Recordings of live sessions with RW mentors from our Android Bootcamp program.\n",
+                "video_identifier": null,
+                "parent_name": null,
+                "accessible": true,
+                "card_artwork_url": "https://files.betamax.raywenderlich.com/attachments/collections/259/f3f1bae3-bf05-439b-ad61-41dc1aba4c3b.png",
+                "body": null
+            },
+            "relationships": {
+                "domains": {
+                    "data": [
+                        {
+                            "id": "6",
+                            "type": "domains"
+                        }
+                    ]
+                },
+                "child_contents": {
+                    "meta": {
+                        "count": 27
+                    }
+                },
+                "progression": {
+                    "data": null
+                },
+                "bookmark": {
+                    "data": null
+                },
+                "groups": {
+                    "data": [
+                        {
+                            "id": "604",
+                            "type": "groups"
+                        }
+                    ]
+                },
+                "categories": {
+                    "data": [
+                        {
+                            "id": "21246",
+                            "type": "categories"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "https://api.raywenderlich.com/api/contents/10529094-android-bootcamp"
+            }
+        }
+    ]
+}
