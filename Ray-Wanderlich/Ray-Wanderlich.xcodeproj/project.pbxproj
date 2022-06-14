@@ -24,6 +24,7 @@
 		61A02B182854122C009B5DE3 /* JsonLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B172854122C009B5DE3 /* JsonLoading.swift */; };
 		61A02B1A285922F9009B5DE3 /* Mocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B19285922F9009B5DE3 /* Mocked.swift */; };
 		61A02B1D285923B0009B5DE3 /* MockedJSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B1C285923B0009B5DE3 /* MockedJSONService.swift */; };
+		61A02B1F2859242B009B5DE3 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A02B1E2859242B009B5DE3 /* UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		61A02B172854122C009B5DE3 /* JsonLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoading.swift; sourceTree = "<group>"; };
 		61A02B19285922F9009B5DE3 /* Mocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocked.swift; sourceTree = "<group>"; };
 		61A02B1C285923B0009B5DE3 /* MockedJSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedJSONService.swift; sourceTree = "<group>"; };
+		61A02B1E2859242B009B5DE3 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				61A02B1328538EA4009B5DE3 /* Utilities.swift */,
 				61A02B172854122C009B5DE3 /* JsonLoading.swift */,
+				61A02B1E2859242B009B5DE3 /* UI.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				612D1A22284FA76C00FE31E2 /* ViewController.swift in Sources */,
 				61A02B1D285923B0009B5DE3 /* MockedJSONService.swift in Sources */,
 				612D1A1E284FA76C00FE31E2 /* AppDelegate.swift in Sources */,
+				61A02B1F2859242B009B5DE3 /* UI.swift in Sources */,
 				61A02B1A285922F9009B5DE3 /* Mocked.swift in Sources */,
 				612D1A20284FA76C00FE31E2 /* SceneDelegate.swift in Sources */,
 				61A02B1428538EA4009B5DE3 /* Utilities.swift in Sources */,

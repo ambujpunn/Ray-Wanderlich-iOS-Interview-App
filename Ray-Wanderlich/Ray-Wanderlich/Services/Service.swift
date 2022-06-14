@@ -14,3 +14,10 @@ protocol Service {
     func fetch() -> AnyPublisher<Data, Never>
 }
 
+protocol Serviceable {
+    func setService<S: Service>(_ service: S)
+}
+
+extension Serviceable {
+    func setService<S: Service>(_ service: S) { assertionFailure("Service: \(S.self) attempting to be used but has not been set.") }
+}
